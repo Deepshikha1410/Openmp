@@ -1,0 +1,19 @@
+first load gcc then load openmpi
+
+############################
+spack load  gcc
+
+############################
+
+spack load openmi/#name
+
+############
+mpicc --version
+
+###############
+spack find -p openmpi -->>>>>>>>>>> it will give the full path of the address
+
+###########
+which gcc  --------->>>>>>>this will also give same output
+
+
