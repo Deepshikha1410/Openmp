@@ -1,0 +1,39 @@
+ssh user4@192.168.82.175
+########### to check details of cpu
+lscpu
+########
+lscpu
+######to get spack
+ls /home/apps
+#########path for spack
+source /home/apps/spack/share/spack/setup-env.sh
+
+spack 
+
+## this will tell how many packages you have
+spack find --loaded
+
+###to find the gcc 
+spack find gcc
+
+#####
+[user4@shavak ~]$ spack load gcc
+==> Error: gcc matches multiple packages.
+  Matching packages:
+    2l445hb gcc@10.1.0%gcc@11.2.0 arch=linux-centos7-cascadelake
+    yqde46k gcc@11.2.0%gcc@4.8.5 arch=linux-centos7-haswell
+  Use a more specific spec.
+
+######3to change versin
+spack load gcc/hash name 
+
+#####
+then again check the gcc --version
+
+
+#### to send the file in other user
+scp -r <source file name> user4@192.168.82.175:<destination>
+
+#####this will show the current version of gpu
+nvidia-smi
+

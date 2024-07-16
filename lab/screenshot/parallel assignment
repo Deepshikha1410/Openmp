@@ -1,0 +1,1 @@
+write a program that calculate for each array element the square of their index and stores it as the element value.These calculations must be done in parallel using openmp for 
